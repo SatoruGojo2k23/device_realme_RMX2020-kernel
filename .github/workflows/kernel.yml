@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Initializing environment
         run: |
-          git config --global user.name "satorugojo2k23"
+          git config --global user.name "SatoruGojo2k23"
           git config --global user.email "satorugojo4200@gmail.com"
           df -h
           ld --version
@@ -39,7 +39,7 @@ jobs:
           cd kernel
           rm -rf .git
           bash build.sh
-          git clone https://"satorugojo2k23":"${GITHUB_TOKEN}"@github.com/satorugojo2k23/device_realme_RMX2020-kernel push
+          git clone https://"SatoruGojo2k23":"${GITHUB_TOKEN}"@github.com/SatoruGojo2k23/device_realme_RMX2020-kernel push
           cp -r out/arch/arm64/boot/Image.gz push
           cd push
           git add .
