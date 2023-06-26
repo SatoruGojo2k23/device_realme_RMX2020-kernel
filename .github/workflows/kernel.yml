@@ -18,7 +18,7 @@ env:
 
 jobs:
   kernel-build:
-    runs-on: jetbrains/teamcity-server
+    runs-on: ubuntu:latest
 
     steps:
       - name: Initializing environment
