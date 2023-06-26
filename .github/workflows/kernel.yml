@@ -18,7 +18,7 @@ env:
 
 jobs:
   kernel-build:
-    runs-on: ubuntu-22.04
+    runs-on: jetbrains/teamcity-server
 
     steps:
       - name: Initializing environment
