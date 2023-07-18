@@ -41,9 +41,8 @@ jobs:
           bash build.sh
           git clone https://"SatoruGojo2k23":"${GITHUB_TOKEN}"@github.com/SatoruGojo2k23/device_realme_RMX2020-kernel push
           cp -r out/arch/arm64/boot/Image.gz push
-          cp -r out/arch/arm64/boot/dtbo.img push
           cp -r out/arch/arm64/boot/dtb.img push
-          cp -r out/arch/arm64/boot/mt6768.dtb push
+   
           cd push
           git add .
           git commit -m "RMX2020-kernel: Update kernel prebuilts" -m "- Build Date: $(date)" -s
